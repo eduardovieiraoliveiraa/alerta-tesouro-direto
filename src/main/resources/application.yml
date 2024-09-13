@@ -1,0 +1,31 @@
+telegram:
+  bot:
+    token: YOUR_TOKEN_HERE
+    id: YOUR_CHAT_ID
+
+spring:
+  sql:
+    init:
+      platform: h2
+  jpa:
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        jpa.show-sql: true
+        format_sql: true
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:testdb;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=LEGACY;NON_KEYWORDS=USER
+  h2:
+    console:
+      enabled: true
+feign:
+  client:
+    config:
+      default:
+        retryer:
+          period: 100  # Intervalo entre tentativas em milissegundos
+          maxPeriod: 1000  # Tempo máximo de espera entre tentativas
+          maxAttempts: 3  # Número máximo de tentativas
+
