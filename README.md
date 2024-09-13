@@ -1,4 +1,6 @@
-Criado um SCHEDULE com o objetivo de avisar quando Titulos do Tesouro direto atingirem um valor especificado e também para avisar quando a rentabilidade do mesmo estiver sido ultrapassada.
+Sejam bem-vindos !! 
+
+Minha ideia foi criar um SCHEDULE com o objetivo de me avisar quando Titulos do Tesouro direto atingirem um valor especificado e também para avisar quando a rentabilidade do mesmo estiver sido ultrapassada.
 
 #https://www.tesourodireto.com.br/titulos/precos-e-taxas.htm
 
@@ -19,4 +21,14 @@ Com todos esses dados desenvolvi uma logica para me avisar quando:
 - toda vez que o IPCA+ 2029 for mais vantajoso que o 2031 (isso ocorre quando a inflação subir muito);
 - Toda vez que o indice sofre uma alterqação diferente da ultima salva no banco H2 em memoria.
 
-  A notificação é enivada no Telegram. Para usar o projeto basta no #application.yml informar o TOKEN do seu telegram e seu chat_id
+  A notificação é enivada no Telegram. Para usar o projeto basta no #application.yml informar o TOKEN do seu telegram e seu chat_id.
+
+  Nesse projeto foram usados:
+
+  spring-boot-starter-data-jpa
+  spring-boot-starter-web;
+  org.seleniumhq.selenium;
+  org.springframework.retry;
+  org.jsoup;
+  com.google.code.gson;
+  org.springframework.cloud.openfeign;
