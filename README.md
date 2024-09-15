@@ -32,3 +32,23 @@ Com todos esses dados desenvolvi uma logica para me avisar quando:
   org.jsoup;
   com.google.code.gson;
   org.springframework.cloud.openfeign;
+
+  ----------------------------SCHEDULED--------------------------------------------
+
+  configurado para rodar de segunda a sexta das 9 as 17 horas, uma vez por hora.
+
+  -------------------------------------------------ENVIO DE MENSAGEM TELEGRAM------------
+
+  Você irá precisar no botFather do telegram para obter seu token e um chatId, acesse https://canaltech.com.br/apps/como-criar-um-bot-no-telegram-botfather/ que tem um tutorial.
+
+  acesse as properties do projeto e informe seu token e chatID
+
+--------------------------------------------------DEPLOY WILDFLY ----------------------
+Efetue o donwload do https://www.wildfly.org/ 
+
+descompacte o zip em um local. ex: C:\wildfly-33.0.1.Final
+acesse: C:\wildfly-33.0.1.Final\bin -> abra o terminal nesse local e execute: .\add-user.bat -> crie um usuario para logar na console de adm do wildfly http://localhost:9990/
+
+feito isso você pode fazer o deploy do projeto. Baste abrir o terminar na pasta do projeto e executar o mvn clean packeage que irá gerar um .war do seu projeto.
+
+
