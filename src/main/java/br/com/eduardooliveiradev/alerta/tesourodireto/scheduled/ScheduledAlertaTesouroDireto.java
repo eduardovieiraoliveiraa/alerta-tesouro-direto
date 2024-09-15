@@ -12,7 +12,7 @@ public class ScheduledAlertaTesouroDireto {
 	@Autowired
 	private AlertaTesouroDiretoService alertaTesouroDiretoService;
 
-	@Scheduled(cron = "0 0 9-17 * * MON-FRI")
+	@Scheduled(cron = "0  9-17 * * MON-FRI")
 	public void enviarAlerta() {
 		alertaTesouroDiretoService.processarAlertaTesouroDireto();
 	}

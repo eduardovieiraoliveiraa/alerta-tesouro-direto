@@ -1,7 +1,7 @@
 telegram:
   bot:
     token: YOUR_TOKEN_HERE
-    id: YOUR_CHAT_ID
+    id: YOUR_CHAT_ID_HERE
 
 spring:
   sql:
