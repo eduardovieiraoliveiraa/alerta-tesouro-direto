@@ -13,7 +13,7 @@ Encontrei muitos problemas para obter uma API que retornasse os titulos publicos
 O Selenium vai abrir o Google executar a URL e retornar para o java um HTML que converto em Json e posteriormente em um Bean. 
 
 Também sofri para obter uma consulta gratuita do IPCA acumulado dos ultimos 12 meses que é a base da nossa inflação. Consegui então uma API aberta do BCB que me retorna a inflação acumulada mes a mes.
-#https://api.bcb.gov.br/dados/serie/bcdata.sgs.433
+#[https://api.bcb.gov.br/dados/serie/bcdata.sgs.433](https://api.bcb.gov.br/dados/serie/bcdata.sgs.433/dados?formato=json&dataInicial=01/09/2023)
 
 Com todos esses dados desenvolvi uma logica para me avisar quando: 
 
